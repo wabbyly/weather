@@ -1,0 +1,141 @@
+.flex-h,
+.flex-v {
+  display: flex;
+  position: relative;
+}
+
+.flex-h {
+  flex-direction: row;
+  max-height: 100%;
+  &.btwn {
+    justify-content: space-between;
+  }
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+  &.around {
+    justify-content: space-around;
+  }
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+  &.center {
+    justify-content: center;
+  }
+}
+
+.flex-v {
+  flex-direction: column;
+  max-width: 100%;
+  &.btwn {
+    justify-content: space-between;
+  }
+  &.reverse {
+    flex-direction: column-reverse;
+  }
+  &.around {
+    justify-content: space-around;
+  }
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+  &.end {
+    justify-content: flex-end;
+  }
+}
+
+.flex-main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+}
+.flex-item {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.flex-left {
+  align-items: flex-start;
+}
+
+.self-left {
+  align-self: flex-start;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.flex-right {
+  align-items: flex-end;
+}
+
+.self-right {
+  align-self: flex-end;
+}
+
+.flex-top {
+  justify-content: flex-start;
+}
+
+.flex-middle {
+  justify-content: center;
+}
+
+.flex-bottom {
+  justify-content: flex-end;
+}
+
+.fullscreen {
+  box-sizing: border-box;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+
+.weather {
+  margin: 70px;
+  border-bottom: 2px solid #cbcaca;
+}
+
+.city {
+  font-size: 50px;
+}
+
+.icon {
+
+}
+
+.description {
+  font-size: 25px;
+}
+
+.temp {
+  font-size: 60px;
+  margin-top: 70px;
+}
+
+.min {
+  font-size: 25px;
+  margin: 15px;
+  padding-bottom: 50px;
+}
+
+button {
+  margin: 10px;
+  border-radius: 8px;
+  padding: 10px 50px;
+  vertical-align: middle;
+  font-size: 25px;
+  text-shadow: 2px 2px #e8e8e8;
+}
+input {
+  margin: 10px 0;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
